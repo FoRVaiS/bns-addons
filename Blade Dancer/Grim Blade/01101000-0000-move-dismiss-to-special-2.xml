@@ -1,0 +1,13 @@
+<!-- Move Dismiss in placeof Black Hole -->
+<!-- Disable: (Blackhole: 163105) -->
+<patches>
+    <patch file="skill3_contextscriptdata_swordmaster.xml">
+        <select-nodes query="//condition[@skill[(.='163105')]]/following-sibling::result/@skillbar-5[(.='163105')]">
+            <set-name name="special-2" />
+        </select-nodes>
+    </patch>
+</patches>
+
+<!-- Dismiss: 163105 -->
+
+<!-- Credit: Ekun Ohne -->
