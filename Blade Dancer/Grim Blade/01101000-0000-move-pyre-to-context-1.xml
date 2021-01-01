@@ -1,0 +1,13 @@
+<!-- Move Funeral Pyre to [LMB]  -->
+<!-- Disable: (Breeze: 163270) -->
+<patches>
+    <patch file="skill3_contextscriptdata_swordmaster.xml">
+        <select-nodes query="//condition[@skill[(.='163129') or (.='163128') or (.='163127') or (.='163126') or (.='163125') or (.='163124') or (.='163123') or (.='163122') or (.='163121') or (.='163120')]]/following-sibling::result/@context-3[(.='163129') or (.='163128') or (.='163127') or (.='163126') or (.='163125') or (.='163124') or (.='163123') or (.='163122') or (.='163121') or (.='163120')]">
+            <set-name name="context-1" />
+        </select-nodes>
+    </patch>
+</patches>
+
+<!-- Funeral Pyre: 163129, 163128, 163127, 163126, 163125, 163124, 163123, 163122, 163121, 163120 -->
+
+<!-- Credit: Ekun Ohne -->
