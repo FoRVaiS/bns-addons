@@ -1,0 +1,14 @@
+<!-- Copy Reap to [X] in placeof Bladeguard -->
+<!-- Disable: (Bladeguard: 163370) -->
+<patches>
+    <patch file="skill3_contextscriptdata_swordmaster.xml">
+        <select-nodes query="//condition[@field='job-style-only' and @job-style='advanced-3']/following-sibling::result/@skillbar-6[(.=163370)]">
+            <set-value value="163361" />
+        </select-nodes>
+    </patch>
+</patches>
+
+<!-- Bladeguard: 163370 -->
+<!-- Reap: 163361 -->
+
+<!-- Credit: Ekun Ohne -->
