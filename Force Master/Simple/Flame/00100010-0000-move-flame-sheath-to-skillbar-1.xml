@@ -1,0 +1,15 @@
+<!-- Provides the ease of access to Flame Sheath on both stances by enabling on [V] permanently -->
+<?xml version="1.0" encoding="UTF-8"?>
+<patches>
+    <patch file="skill3_contextscriptdata_forcemaster_contextsimplemode.xml">
+        <!-- When in Flame or Frost Stance, set [V] to Flame Sheath -->
+        <select-nodes query="//condition[
+            (@job-style='base-1') 
+         or (@job-style='advanced-1')
+        ]/following-sibling::result/@skillbar-8">
+          <set-value value="131210" />
+        </select-nodes>
+    </patch>
+</patches>
+
+<!-- Addon by: forvais -->
